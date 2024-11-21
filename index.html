@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FluentPet + PetCube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #2d8d91, #fbb13c);
+        margin: 0;
+        color: #fff;
+      }
+
+      .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-bottom: 6rem;
+      }
+
+      header {
+        margin-bottom: 2rem;
+      }
+
+      button:hover svg path {
+        stroke: #fff;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        h2,
+        p,
+        button {
+          font-size: smaller;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto px-4 py-8 relative">
+      <header class="flex items-center justify-between">
+        <div class="w-6"></div>
+      </header>
+
+      <main class="text-center">
+        <h2 class="text-xl font-bold text-[#006271] mb-4">
+          FluentPet + PetCube
+        </h2>
+
+        <div class="space-y-2 mb-6">
+          <p class="text-4xl font-bold text-[#006271]">Capture</p>
+          <p class="text-4xl font-bold text-[#006271]">their presses</p>
+          <p class="text-4xl font-bold text-[#006271]">on camera!</p>
+        </div>
+
+        <div class="flex justify-center mb-6">
+          <img
+            src="./assets/images/PetCubeButtonCamera.png"
+            alt="Button Camera"
+            class="w-full sm:w-4/5 md:w-3/4 lg:w-1/2 max-w-xl h-auto object-contain mx-auto"
+          />
+        </div>
+
+        <div class="space-y-2 mb-4">
+          <p class="text-base text-[#006271]">
+            Automatically get videos of your learner's
+          </p>
+          <p class="text-base text-[#006271]">
+            button presses in the FluentPet App with a
+          </p>
+          <p class="text-base font-bold text-[#006271]">
+            subscription to PetCube for $11.99/mo
+          </p>
+        </div>
+
+        <p class="italic text-sm text-[#006271] mb-8">
+          PetCube Camera included at no extra charge!
+        </p>
+
+        <div class="fixed bottom-0 left-0 right-0 p-4">
+          <button
+            onclick="window.open('https://petcube.com/cart/add/cam-fluentpet-bundle/', '_blank')"
+            class="w-full bg-[#006271] text-white py-3 rounded-lg font-bold"
+          >
+            Get Started!
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
